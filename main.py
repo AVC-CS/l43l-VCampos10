@@ -1,22 +1,17 @@
 def main():
-    total = 0
-
+    
     numbers = [0] * 5
-    for i in range(len(numbers)):
+    total = 0
+    for i in range(5):
         numbers[i] = int(input('Enter a value: '))
-
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
-
-    # total = sum(numbers)
+    print(numbers)
+    #total = sum(numbers)
+    for v in numbers:
+        total += v  
+    
+    
     print(total)
-
-    ########################################
-    # Do not delete the return statement
-    ########################################
+    
     return total, numbers
 
 
